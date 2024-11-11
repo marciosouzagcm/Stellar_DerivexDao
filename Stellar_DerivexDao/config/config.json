@@ -1,0 +1,7 @@
+{
+    "network": "TESTNET",
+    "secret": "SD6VM5BBRXDVKWXXDGTQI6OVQYSI3M4HRFMQIW43W3KC5JZIPZDLLRIY",
+    "keypair": "GA66SXAPEFNWT7EZJZHZ5ZQ53YDFB2CYZ53JQCPUHBYMWAAYYLR2SRHJ",
+    "contract": "stellar_derivex_dao",
+    "wasm": "\\Users\\DELL\\Stellar_DerivexDao\\target\\wasm32-unknown-unknown\\release\\stellar_derivex_dao.wasm"
+  }
