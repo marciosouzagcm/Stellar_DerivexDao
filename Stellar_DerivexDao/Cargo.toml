@@ -20,5 +20,13 @@ chrono = { version = "0.4", features = ["serde"] }       # Para manipulação de
 anyhow = "1.0"                                           # Para gestão de erros
 thiserror = "2.0.3"                                        # Para definir tipos de erro customizados
 
+[lib]
+name = "Stellar_DerivexDao"
+path = "src/lib.rs"
+
+[[bin]]
+name = "Stellar_DerivexDao"
+path = "src/main.rs"
+
 [dev-dependencies]
 tokio = { version = "1", features = ["full"] }           # Para testes assíncronos
