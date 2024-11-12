@@ -1,5 +1,5 @@
 [package]
-name = "Stellar_DerivexDao"
+name = "stellar_derivex_dao"
 version = "0.1.0"
 authors = ["marciosouzagcm"]
 description = "Projeto Stellar DerivexDao"
