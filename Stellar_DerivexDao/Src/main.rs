@@ -1,3 +1,7 @@
+// Executável (bin)
+mod lib;
+
 fn main() {
-    println!("Seja bem vindo a Stellar DerivexDao!");
+    let resultado = lib::soma(2, 3);
+    println!("Resultado: {}", resultado);
 }
