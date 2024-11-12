@@ -5,20 +5,17 @@ authors = ["marciosouzagcm"]
 description = "stellar_derivex_dao"
 license = "MIT"
 homepage = "(link unavailable)"
-repository = "https://github.com/marciosouzagcm/Stellar_DerivexDao.git"
+repository = "(link unavailable)"
 
 [dependencies]
-soroban-sdk = "21.7.7" # ou a versão mais recente do SDK
-
-# Dependências comuns (adapte conforme necessário)
-
-serde = { version = "1.0.215", features = ["derive"] }       # Para serialização e deserialização
-rand = "0.8"                                             # Para geração de números aleatórios
-log = "0.4"                                              # Para logging
-env_logger = "0.11.5"                                       # Para configurar logs
-chrono = { version = "0.4", features = ["serde"] }       # Para manipulação de datas e horas
-anyhow = "1.0"                                           # Para gestão de erros
-thiserror = "2.0.3"                                        # Para definir tipos de erro customizados
+soroban-sdk = "21.7.7"  # ou a versão mais recente do SDK
+serde = { version = "1.0.215", features = ["derive"] }
+rand = "0.8"
+log = "0.4"
+env_logger = "0.11.5"
+chrono = { version = "0.4", features = ["serde"] }
+anyhow = "1.0"
+thiserror = "2.0.3"
 
 [lib]
 name = "stellar_derivex_dao"
@@ -29,4 +26,7 @@ name = "stellar_derivex_dao"
 path = "src/main.rs"
 
 [dev-dependencies]
-tokio = { version = "1", features = ["full"] }           # Para testes assíncronos
+tokio = { version = "1", features = ["full"] }
+
+[features]
+default = ["serde/derive"]
