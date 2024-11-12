@@ -1,4 +1,5 @@
 fn main() {
-    let resultado = lib::soma(2, 3);
+    // Usa a função soma da biblioteca
+    let resultado = soma(2, 3);
     println!("Resultado: {}", resultado);
 }

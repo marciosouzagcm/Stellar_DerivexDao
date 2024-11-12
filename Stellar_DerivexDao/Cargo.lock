@@ -3,21 +3,6 @@
 version = 3
 
 [[package]]
-name = "Stellar_DerivexDao"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "chrono",
- "env_logger",
- "log",
- "rand",
- "serde",
- "soroban-sdk",
- "thiserror 2.0.3",
- "tokio",
-]
-
-[[package]]
 name = "addr2line"
 version = "0.24.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1417,6 +1402,21 @@ dependencies = [
  "serde",
  "serde_with",
  "stellar-strkey",
+]
+
+[[package]]
+name = "stellar_derivex_dao"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "chrono",
+ "env_logger",
+ "log",
+ "rand",
+ "serde",
+ "soroban-sdk",
+ "thiserror 2.0.3",
+ "tokio",
 ]
 
 [[package]]
