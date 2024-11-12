@@ -22,7 +22,7 @@ name = "stellar_derivex_dao"
 path = "src/lib.rs"
 
 [[bin]]
-name = "stellar_derivex_dao"
+name = "stellar_derivex_dao_bin"
 path = "src/main.rs"
 
 [dev-dependencies]
