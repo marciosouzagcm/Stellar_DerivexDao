@@ -2,7 +2,7 @@
 name = "stellar_derivex_dao"
 version = "0.1.0"
 authors = ["marciosouzagcm"]
-description = "Projeto Stellar DerivexDao"
+description = "stellar_derivex_dao"
 license = "MIT"
 homepage = "(link unavailable)"
 repository = "https://github.com/marciosouzagcm/Stellar_DerivexDao.git"
@@ -21,11 +21,11 @@ anyhow = "1.0"                                           # Para gestão de erros
 thiserror = "2.0.3"                                        # Para definir tipos de erro customizados
 
 [lib]
-name = "Stellar_DerivexDao"
+name = "stellar_derivex_dao"
 path = "src/lib.rs"
 
 [[bin]]
-name = "Stellar_DerivexDao"
+name = "stellar_derivex_dao"
 path = "src/main.rs"
 
 [dev-dependencies]
