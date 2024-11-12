@@ -18,6 +18,10 @@ chrono = { version = "0.4", features = ["serde"] }
 anyhow = "1.0"
 thiserror = "2.0.3"
 
+[lib]
+name = "stellar_derivex_dao"
+path = "src/lib.rs"
+
 [[bin]]
 name = "stellar_derivex_dao_bin"
 path = "src/main.rs"
