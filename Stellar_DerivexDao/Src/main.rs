@@ -1,5 +1,4 @@
 // src/main.rs
-mod lib;
 use lib::soma;
 
 fn main() {
