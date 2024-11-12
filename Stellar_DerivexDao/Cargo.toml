@@ -1,7 +1,11 @@
 [package]
-name = "meu_projeto_soroban"
+name = "Stellar_DerivexDao"
 version = "0.1.0"
-edition = "2021"
+authors = ["marciosouzagcm"]
+description = "Projeto Stellar DerivexDao"
+license = "MIT"
+homepage = "(link unavailable)"
+repository = "https://github.com/marciosouzagcm/Stellar_DerivexDao.git"
 
 [dependencies]
 soroban-sdk = "21.7.7" # ou a versão mais recente do SDK
