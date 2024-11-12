@@ -1,4 +1,4 @@
-use stellar_derivex_dao::soma;
+use crate::lib::soma;
 
 fn main() {
     let resultado = soma(2, 3);
