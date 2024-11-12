@@ -1,4 +1,4 @@
-mod lib;
+
 use lib::soma;
 
 fn main() {
