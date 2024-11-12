@@ -1,5 +1,4 @@
-mod lib;
-use lib:soma;
+use stellar_derivex_dao::soma;
 
 fn main() {
     let resultado = soma(2, 3);
