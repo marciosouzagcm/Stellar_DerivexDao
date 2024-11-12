@@ -1,4 +1,5 @@
-use crate::lib::soma;
+mod lib;
+use lib:soma;
 
 fn main() {
     let resultado = soma(2, 3);
