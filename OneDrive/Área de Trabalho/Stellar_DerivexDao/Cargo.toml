@@ -2,8 +2,8 @@
 name = "stellar_derivex_dao"
 version = "0.1.0"
 edition = "2021"
-authors = ["marciosouzagcm"]
-description = "stellar_derivex_dao"
+authors = ["Marcio Souza <marciosouzagcm>"]
+description = "Stellar Derivex DAO library"
 license = "MIT"
 homepage = "(link unavailable)"
 repository = "https://github.com/marciosouzagcm/Stellar_DerivexDao.git"
