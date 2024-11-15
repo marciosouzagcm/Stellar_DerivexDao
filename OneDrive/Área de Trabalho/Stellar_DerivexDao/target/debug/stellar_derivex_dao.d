@@ -1,1 +1,0 @@
-C:\Users\DELL\OneDrive\Área\ de\ Trabalho\Stellar_DerivexDao\target\debug\stellar_derivex_dao.exe: C:\Users\DELL\OneDrive\Área\ de\ Trabalho\Stellar_DerivexDao\Src\main.rs

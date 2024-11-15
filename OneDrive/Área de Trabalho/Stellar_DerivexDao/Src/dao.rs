@@ -1,18 +1,20 @@
+/// Estrutura do DAO para Stellar Derivex
 pub struct StellarDerivexDAO {
-    // Adicione campos aqui
+    /// Campo de exemplo (adicione campos reais aqui)
+    exemplo: String,
 }
 
 impl StellarDerivexDAO {
-    // Defina o método new
+    /// Cria uma nova instância do DAO
     pub fn new() -> Self {
         StellarDerivexDAO {
-            // Inicialize campos aqui
+            exemplo: "Valor inicial".to_string(),
         }
     }
 
-    // Defina o método executar
+    /// Executa a lógica do DAO
     pub fn executar(&self) {
-        // Adicione a lógica do método executar aqui
         println!("Método executar chamado com sucesso!");
+        // Adicione a lógica do método executar aqui
     }
 }

@@ -1,6 +1,7 @@
 cargo-features = ["edition2024"]
 
 [package]
+include = ["src/main.rs"]
 name = "stellar_derivex_dao"
 version = "1.0.0"
 edition = "2024"
