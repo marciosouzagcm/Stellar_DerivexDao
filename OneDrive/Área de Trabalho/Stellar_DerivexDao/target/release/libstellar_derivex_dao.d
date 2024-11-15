@@ -1,1 +1,0 @@
-C:\Users\DELL\OneDrive\Área\ de\ Trabalho\Stellar_DerivexDao\target\release\libstellar_derivex_dao.rlib: C:\Users\DELL\OneDrive\Área\ de\ Trabalho\Stellar_DerivexDao\Src\dao.rs C:\Users\DELL\OneDrive\Área\ de\ Trabalho\Stellar_DerivexDao\Src\lib.rs
