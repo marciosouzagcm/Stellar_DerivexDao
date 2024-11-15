@@ -11,18 +11,14 @@ homepage = "(link unavailable)"
 repository = "(link unavailable)"
 
 [dependencies]
-soroban-sdk = { version = "22.0.0-rc.3.2" }
+soroban-sdk = { version = "21.7.7" }
 serde = { version = "1.0.130", features = ["derive"] }
 rand = "0.8.4"
 log = "0.4.14"
-env_logger = "0.9.1"
+env_logger = "0.11.5"
 chrono = { version = "0.4.19", features = ["serde"] }
 anyhow = "1.0.66"
 thiserror = "2.0.3"
-
-[lib]
-name = "stellar_derivex_dao"
-path = "src/lib.rs"
 
 [[bin]]
 name = "stellar_derivex_dao"
