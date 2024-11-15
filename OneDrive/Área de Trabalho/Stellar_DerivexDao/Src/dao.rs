@@ -1,15 +1,11 @@
 /// Estrutura do DAO para Stellar Derivex
 pub struct StellarDerivexDAO {
-    /// Campo de exemplo (adicione campos reais aqui)
-    exemplo: String,
 }
 
 impl StellarDerivexDAO {
     /// Cria uma nova instância do DAO
     pub fn new() -> Self {
-        StellarDerivexDAO {
-            exemplo: "Valor inicial".to_string(),
-        }
+        StellarDerivexDAO {}
     }
 
     /// Executa a lógica do DAO
