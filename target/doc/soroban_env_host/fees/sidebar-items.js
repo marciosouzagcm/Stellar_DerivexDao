@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"constant":["MINIMUM_WRITE_FEE_PER_1KB","TTL_ENTRY_SIZE","TX_BASE_RESULT_SIZE"],"fn":["compute_rent_fee","compute_transaction_resource_fee","compute_write_fee_per_1kb"],"struct":["FeeConfiguration","LedgerEntryRentChange","RentFeeConfiguration","TransactionResources","WriteFeeConfiguration"]};

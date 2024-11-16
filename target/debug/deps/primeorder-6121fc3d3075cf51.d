@@ -1,0 +1,10 @@
+C:\Users\DELL\OneDrive\Área de Trabalho\Stellar_DerivexDao\target\debug\deps\libprimeorder-6121fc3d3075cf51.rmeta: C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\primeorder-0.13.6\src\lib.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\primeorder-0.13.6\src\point_arithmetic.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\primeorder-0.13.6\src\affine.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\primeorder-0.13.6\src\field.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\primeorder-0.13.6\src\projective.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\primeorder-0.13.6\src\../README.md
+
+C:\Users\DELL\OneDrive\Área de Trabalho\Stellar_DerivexDao\target\debug\deps\primeorder-6121fc3d3075cf51.d: C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\primeorder-0.13.6\src\lib.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\primeorder-0.13.6\src\point_arithmetic.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\primeorder-0.13.6\src\affine.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\primeorder-0.13.6\src\field.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\primeorder-0.13.6\src\projective.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\primeorder-0.13.6\src\../README.md
+
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\primeorder-0.13.6\src\lib.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\primeorder-0.13.6\src\point_arithmetic.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\primeorder-0.13.6\src\affine.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\primeorder-0.13.6\src\field.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\primeorder-0.13.6\src\projective.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\primeorder-0.13.6\src\../README.md:

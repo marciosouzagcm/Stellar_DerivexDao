@@ -1,0 +1,1 @@
+searchState.loadedDescShard("stellar_derivex_dao", 0, "Estrutura do DAO para Stellar Derivex\nExecuta a lógica do DAO\nReturns the argument unchanged.\nCalls <code>U::from(self)</code>.\nCria uma nova instância do DAO")
