@@ -1,0 +1,11 @@
+C:\Users\DELL\OneDrive\Área de Trabalho\Stellar_DerivexDao\target\debug\deps\libark_serialize-35a24c491bb62b88.rmeta: C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ark-serialize-0.4.2\src\lib.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ark-serialize-0.4.2\src\error.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ark-serialize-0.4.2\src\flags.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ark-serialize-0.4.2\src\impls.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ark-serialize-0.4.2\src\../README.md
+
+C:\Users\DELL\OneDrive\Área de Trabalho\Stellar_DerivexDao\target\debug\deps\libark_serialize-35a24c491bb62b88.rlib: C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ark-serialize-0.4.2\src\lib.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ark-serialize-0.4.2\src\error.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ark-serialize-0.4.2\src\flags.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ark-serialize-0.4.2\src\impls.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ark-serialize-0.4.2\src\../README.md
+
+C:\Users\DELL\OneDrive\Área de Trabalho\Stellar_DerivexDao\target\debug\deps\ark_serialize-35a24c491bb62b88.d: C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ark-serialize-0.4.2\src\lib.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ark-serialize-0.4.2\src\error.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ark-serialize-0.4.2\src\flags.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ark-serialize-0.4.2\src\impls.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ark-serialize-0.4.2\src\../README.md
+
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ark-serialize-0.4.2\src\lib.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ark-serialize-0.4.2\src\error.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ark-serialize-0.4.2\src\flags.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ark-serialize-0.4.2\src\impls.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ark-serialize-0.4.2\src\../README.md:

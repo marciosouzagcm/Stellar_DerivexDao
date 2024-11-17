@@ -1,9 +1,0 @@
-(function() {
-    var implementors = Object.fromEntries([["indexmap",[["impl&lt;K, V&gt; !<a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/marker/trait.Sized.html\" title=\"trait core::marker::Sized\">Sized</a> for <a class=\"struct\" href=\"indexmap/map/struct.Slice.html\" title=\"struct indexmap::map::Slice\">Slice</a>&lt;K, V&gt;",1,["indexmap::map::slice::Slice"]],["impl&lt;T&gt; !<a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/marker/trait.Sized.html\" title=\"trait core::marker::Sized\">Sized</a> for <a class=\"struct\" href=\"indexmap/set/struct.Slice.html\" title=\"struct indexmap::set::Slice\">Slice</a>&lt;T&gt;",1,["indexmap::set::slice::Slice"]]]],["wasmparser",[["impl !<a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/marker/trait.Sized.html\" title=\"trait core::marker::Sized\">Sized</a> for <a class=\"struct\" href=\"wasmparser/names/struct.KebabStr.html\" title=\"struct wasmparser::names::KebabStr\">KebabStr</a>",1,["wasmparser::validator::names::KebabStr"]]]],["wasmparser_nostd",[["impl !<a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/marker/trait.Sized.html\" title=\"trait core::marker::Sized\">Sized</a> for <a class=\"struct\" href=\"wasmparser_nostd/types/struct.KebabStr.html\" title=\"struct wasmparser_nostd::types::KebabStr\">KebabStr</a>",1,["wasmparser_nostd::validator::types::KebabStr"]]]]]);
-    if (window.register_implementors) {
-        window.register_implementors(implementors);
-    } else {
-        window.pending_implementors = implementors;
-    }
-})()
-//{"start":57,"fragment_lengths":[642,338,362]}

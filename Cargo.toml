@@ -1,6 +1,6 @@
 [package]
 name = "stellar_derivex_dao"
-version = "1.0.1"  # atualizado
+version = "1.0.1"
 edition = "2021"
 authors = ["Marcio Souza <marciosouzagcm>"]
 description = "Biblioteca Stellar Derivex DAO para trading de derivativos descentralizados"
@@ -9,21 +9,29 @@ homepage = "https://www.linkedin.com/in/m%C3%A1rcio-souza-155171115/"
 repository = "https://github.com/marciosouzagcm/Stellar_DerivexDao.git"
 
 [dependencies]
-soroban-sdk = { version = "21.7.7" }
-serde = { version = "1.0.130", features = ["derive"] }
-rand = "0.8.4"
-log = "0.4.14"
-env_logger = "0.11.5"
+soroban-sdk = "22.0.0-rc.3.2"
+serde = { version = "1.0.144", features = ["derive"] }
+rand = "0.8.5"
+log = "0.4.16"
+env_logger = "0.9.1"
 chrono = { version = "0.4.19", features = ["serde"] }
-anyhow = "1.0.66"
-thiserror = "2.0.3"
+anyhow = "1.0.68"
+thiserror = "1.0.31"
+
+[lib]
+name = "stellar_derivex_dao"
+path = "src/lib.rs"
 
 [[bin]]
 name = "stellar_derivex_dao"
 path = "src/main.rs"
 
 [dev-dependencies]
-tokio = { version = "1", features = ["full"] }
+tokio = { version = "1.24.1", features = ["full"] }
 
 [features]
 default = ["serde/derive"]
+
+[[test]]
+name = "tests"
+path = "tests/testes.rs"

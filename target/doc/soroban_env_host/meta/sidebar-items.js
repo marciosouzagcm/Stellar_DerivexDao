@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"constant":["ENV_META_V0_SECTION_NAME","INTERFACE_VERSION","XDR"],"fn":["get_ledger_protocol_version","get_pre_release_version","make_interface_version"]};

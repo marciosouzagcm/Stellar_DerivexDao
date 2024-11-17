@@ -1,6 +1,8 @@
-/// Módulo para criar e gerenciar tokens na rede Stellar.
+// Módulo para criar e gerenciar tokens na rede Stellar.
 
-use stellar_rust_sdk::{Account, Asset, Keypair, Network, Server, TransactionBuilder};
+use stellar_rust_sdk::{
+    Account, Asset, Keypair, Network, Server, TransactionBuilder,
+};
 use stellar_rust_sdk::transaction::{Transaction, Operation};
 use std::error::Error;
 use std::sync::Mutex;
@@ -82,7 +84,11 @@ fn criar_conta(keypair: &Keypair) -> Result<Account, Box<dyn Error>> {
 /// # Erro
 ///
 /// * `Box<dyn Error>`: Erro ao criar a transação.
-fn criar_transacao(account: &Account, keypair: &Keypair, asset: &Asset) -> Result<Transaction, Box<dyn Error>> {
+fn criar_transacao(
+    account: &Account,
+    keypair: &Keypair,
+    asset: &Asset,
+) -> Result<Transaction, Box<dyn Error>> {
     // Utilize transações assinadas.
     let transaction = TransactionBuilder::new(account, &Network::test_network(), 100)
         .append_operation(Operation::CreateAsset {
@@ -114,7 +120,10 @@ fn criar_transacao(account: &Account, keypair: &Keypair, asset: &Asset) -> Resul
 /// # Erro
 ///
 /// * `Box<dyn Error>`: Erro ao assinar a transação.
-fn assinar_transacao(transaction: &Transaction, keypair: &Keypair) -> Result<Transaction, Box<dyn Error>> {
+fn assinar_transacao(
+    transaction: &Transaction,
+    keypair: &Keypair,
+) -> Result<Transaction, Box<dyn Error>> {
     // Utilize implementação de segurança de múlti-assinatura.
     let signed_transaction = transaction.sign(&keypair.secret())?;
     Ok(signed_transaction)
@@ -140,5 +149,3 @@ fn enviar_transacao(signed_transaction: &Transaction) -> Result<(), Box<dyn Erro
     server.submit_transaction(signed_transaction)?;
     Ok(())
 }
-
-fn

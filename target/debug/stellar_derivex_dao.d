@@ -1,1 +1,1 @@
-C:\Users\DELL\OneDrive\Área\ de\ Trabalho\Stellar_DerivexDao\target\debug\stellar_derivex_dao.exe: C:\Users\DELL\OneDrive\Área\ de\ Trabalho\Stellar_DerivexDao\Src\dao.rs C:\Users\DELL\OneDrive\Área\ de\ Trabalho\Stellar_DerivexDao\Src\main.rs
+C:\Users\DELL\OneDrive\Área\ de\ Trabalho\Stellar_DerivexDao\target\debug\stellar_derivex_dao.exe: C:\Users\DELL\OneDrive\Área\ de\ Trabalho\Stellar_DerivexDao\Src\dao\mod.rs C:\Users\DELL\OneDrive\Área\ de\ Trabalho\Stellar_DerivexDao\Src\lib.rs C:\Users\DELL\OneDrive\Área\ de\ Trabalho\Stellar_DerivexDao\Src\main.rs
