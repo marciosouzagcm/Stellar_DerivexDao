@@ -12,7 +12,7 @@ lazy_static! {
 }
 
 /// URL do servidor Horizon.
-const HORIZON_URL: &str = "(link unavailable)";
+const HORIZON_URL: &str = "horizon.stellar.org";
 
 /// Passphrase da rede.
 const NETWORK_PASSPHRASE: &str = "Test Network";
@@ -44,7 +44,7 @@ fn criar_par_de_chaves() -> Result<Keypair, Box<dyn Error>> {
 /// * `Asset`: O novo token criado.
 fn criar_token() -> Asset {
     // Utilize variáveis claras e concisas.
-    let code = "DVX";
+    let code = "SVX";
     let issuer = "GBBD47IF6NO3HIYTQAV5ZNO4CZMQVPPRL7SS4N4WEH5SVJ2T7E7QY";
     Asset::new(code, issuer)
 }

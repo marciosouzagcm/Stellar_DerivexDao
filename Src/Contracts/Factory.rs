@@ -22,11 +22,9 @@ impl DerivexFactory {
     /// Cria uma nova instância de DerivexFactory.
     ///
     /// # Parâmetros
-    ///
     /// * `server`: Servidor Stellar.
     ///
     /// # Retorno
-    ///
     /// * `DerivexFactory`: Nova instância de DerivexFactory.
     pub fn new(server: Server) -> Self {
         DerivexFactory {
@@ -40,16 +38,10 @@ impl DerivexFactory {
     /// Cria uma nova exchange associada ao token.
     ///
     /// # Parâmetros
-    ///
     /// * `token_address`: Endereço do token.
     ///
     /// # Retorno
-    ///
-    /// * `Exchange`: Nova exchange criada.
-    ///
-    /// # Erro
-    ///
-    /// * `Box<dyn Error>`: Erro ao criar a exchange.
+    /// * `Result<Exchange, Box<dyn Error>>`: Nova exchange criada ou erro.
     pub fn create_new_exchange(&mut self, token_address: String) -> Result<Exchange, Box<dyn Error>> {
         // Validação de dados.
         if token_address.is_empty() {
@@ -69,11 +61,9 @@ impl DerivexFactory {
     /// Consulta a exchange associada a um token.
     ///
     /// # Parâmetros
-    ///
     /// * `token_address`: Endereço do token.
     ///
     /// # Retorno
-    ///
     /// * `Option<&Exchange>`: Exchange associada ao token, se existir.
     pub fn get_exchange(&self, token_address: &str) -> Option<&Exchange> {
         self.token_to_exchange.get(token_address)
@@ -82,11 +72,9 @@ impl DerivexFactory {
     /// Consulta o token associado a uma exchange.
     ///
     /// # Parâmetros
-    ///
     /// * `exchange`: Exchange.
     ///
     /// # Retorno
-    ///
     /// * `Option<&String>`: Token associado à exchange, se existir.
     pub fn get_token(&self, exchange: &Exchange) -> Option<&String> {
         self.exchange_to_token.get(exchange)
@@ -95,28 +83,81 @@ impl DerivexFactory {
     /// Consulta o token associado a um ID específico.
     ///
     /// # Parâmetros
-    ///
     /// * `token_id`: ID do token.
     ///
     /// # Retorno
-    ///
     /// * `Option<&String>`: Token associado ao ID, se existir.
     pub fn get_token_with_id(&self, token_id: u64) -> Option<&String> {
         self.id_to_token.get(&token_id)
     }
 }
 
-fn main() {
-    // Criação do servidor Stellar.
-    let server = Server::new("(link unavailable)");
-    
-    // Criação da fábrica de exchanges.
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use stellar_rust_sdk::Server;
+
+    #[test]
+    fn test_create_new_exchange() {
+        let server = Server::new("horizon.stellar.org");
+        let mut factory = DerivexFactory::new(server);
+        assert!(factory.create_new_exchange("TokenAddress".to_string()).is_ok());
+    }
+
+    #[test]
+    fn test_get_exchange() {
+        let server = Server::new("horizon.stellar.org");
+        let mut factory = DerivexFactory::new(server);
+        let exchange = factory.create_new_exchange("TokenAddress".to_string()).unwrap();
+        assert!(factory.get_exchange("TokenAddress").is_some());
+    }
+
+    #[test]
+    fn test_get_token() {
+        let server = Server::new("horizon.stellar.org");
+        let mut factory = DerivexFactory::new(server);
+        let exchange = factory.create_new_exchange("TokenAddress".to_string()).unwrap();
+        assert!(factory.get_token(&exchange).is_some());
+    }
+    #[test]
+fn test_get_token_with_id() {
+    let server = Server::new("horizon.stellar.org");
     let mut factory = DerivexFactory::new(server);
-    
-    // Criação de uma nova exchange.
     let exchange = factory.create_new_exchange("TokenAddress".to_string()).unwrap();
-    
-    // Consulta da exchange associada ao token.
-    let exchange_consultada = factory.get_exchange("TokenAddress");
-    println!("{:?}", exchange_consultada);
+    factory.id_to_token.insert(1, "TokenAddress".to_string());
+
+    assert_eq!(factory.get_token_with_id(1).unwrap(), "TokenAddress");
+}
+
+#[test]
+fn test_create_new_exchange_error() {
+    let server = Server::new("horizon.stellar.org");
+    let mut factory = DerivexFactory::new(server);
+
+    assert!(factory.create_new_exchange(String::new()).is_err());
+}
+
+#[test]
+fn test_get_exchange_error() {
+    let server = Server::new("horizon.stellar.org");
+    let factory = DerivexFactory::new(server);
+
+    assert!(factory.get_exchange("TokenAddress").is_none());
+}
+
+#[test]
+fn test_get_token_error() {
+    let server = Server::new("horizon.stellar.org");
+    let factory = DerivexFactory::new(server);
+    let exchange = Exchange::new(&server, "TokenAddress").unwrap();
+
+    assert!(factory.get_token(&exchange).is_none());
+}
+
+#[test]
+fn test_get_token_with_id_error() {
+    let server = Server::new("horizon.stellar.org");
+    let factory = DerivexFactory::new(server);
+
+    assert!(factory.get_token_with_id(1).is_none());
 }
