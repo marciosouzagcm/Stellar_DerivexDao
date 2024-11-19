@@ -1,11 +1,32 @@
 {
-    "name": "stellar-derivexdao",
+    "name": "Stellar_DerivexDao",
     "version": "1.0.0",
-    "scripts": {},
-    "devDependencies": {
-        "mocha": "^10.8.2"
+    "description": "Stellar Derivex Dao Project",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha tests/*.test.js",
+        "start": "node index.js",
+        "build": "tsc",
+        "lint": "eslint ."
     },
+    "keywords": [
+        "Stellar",
+        "Derivex",
+        "DAO",
+        "Blockchain"
+    ],
+    "author": "Marcio Souza <marciosouzagcm>",
+    "license": "MIT",
     "dependencies": {
-        "@stellar/stellar-sdk": "^12.3.0"
+        "chai": "^4.3.6",
+        "mocha": "^10.0.0",
+        "@stellar/stellar-sdk": "^13.0.0"
+    },
+    "devDependencies": {
+        "@types/chai": "^4.3.4",
+        "@types/mocha": "^9.0.0",
+        "@types/node": "^18.0.0",
+        "eslint": "^8.23.0",
+        "typescript": "^4.9.4"
     }
 }

@@ -1,4 +1,4 @@
-pub use dao::StellarDerivexDAO;
+use dao::StellarDerivexDAO;
 
 /// Estrutura do DAO para Stellar Derivex
 pub struct StellarDerivexDAO {

@@ -1,5 +1,5 @@
 // Token.js
-const { Asset, Server } = require('stellar-sdk');
+const { Server } = require('@stellar/stellar-sdk');
 const { Server } = require('stellar-sdk');
 
 class Token {

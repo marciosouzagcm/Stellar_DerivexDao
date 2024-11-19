@@ -1,3 +1,5 @@
+use dao::StellarDerivexDAO;
+
 #[cfg(test)]
 mod tests {
     use super::*;
